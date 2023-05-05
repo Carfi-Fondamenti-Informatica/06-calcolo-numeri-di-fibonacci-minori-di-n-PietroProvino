@@ -4,7 +4,9 @@ using namespace std;
 
 int main() {
     int n, a=1,b=1,c ;
-    cin >> n;
+    do{
+        cin >> n;
+    }while (n<2);
         for( int j=2; j<=n; j++){
             cout << a << endl;
             cout << b << endl;
@@ -17,9 +19,5 @@ int main() {
             a=1;
             b=1;
         }
-    }
-    else{
-        cout << "errore";
-    }
     return 0;
 }
